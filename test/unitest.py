@@ -1,5 +1,6 @@
 import unittest
-from unittest.mock import patch
+from unittest.mock import patch, MagicMock
+import subprocess
 
 import sys
 import os
@@ -14,13 +15,24 @@ class TestManger(unittest.TestCase):
         # Test for blueprint method with "java"
         Manger.java()
         mock_subprocess_run.assert_called_once_with(["./PyDepManger/bash/blueprint.sh", "java"])
-        
+
         # Reset the mock for the next test
         mock_subprocess_run.reset_mock()
-        
+
         # Test for blueprint method with "py"
         Manger.python()
         mock_subprocess_run.assert_called_once_with(["./PyDepManger/bash/blueprint.sh", "py"])
+
+        # Reset the mock for the next test
+        mock_subprocess_run.reset_mock()
+
+        # Test for blueprint method with "data"
+        try:
+            Manger.data()
+            mock_subprocess_run.assert_called_once_with(["./PyDepManger/bash/pacs.sh"])
+        except AssertionError:
+            raise AssertionError
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -12,9 +12,14 @@ class Manger:
         app = "py"
         Manger.blueprint(app)
         
+    def data():
+        import numpy
+        import pandas
+        import scipy
+        subprocess.run(["./PyDepManger/bash/pacs.sh"])
+        
 
     
-        
     
 
 
