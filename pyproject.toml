@@ -1,3 +1,8 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+
 [project]
 name = "PyDepManger"
 authors = [
@@ -25,3 +30,7 @@ dynamic = ["version"]
 [project.urls]
 Homepage = "https://github.com/abuawadd/PyDepManger"
 Issues = "https://github.com/abuawadd/PyDepManger/issues"
+
+
+[tool.setuptools_scm]
+version_file = "pkg/_version.py"
