@@ -31,6 +31,3 @@ dynamic = ["version"]
 Homepage = "https://github.com/abuawadd/PyDepManger"
 Issues = "https://github.com/abuawadd/PyDepManger/issues"
 
-
-[tool.setuptools_scm]
-version_file = "pkg/_version.py"
