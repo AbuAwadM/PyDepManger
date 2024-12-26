@@ -1,6 +1,11 @@
 # PyDepManager
 
 ![Static Badge](https://img.shields.io/badge/bioinformatics-PyHLicorn-green?link=https://academic.oup.com/bioinformatics)
+![GitHub Repo stars](https://img.shields.io/github/stars/AbuAwadM/PyDepManager?style=social)
+![Documentation Status](https://readthedocs.org/projects/pydepmanager/badge/?version=latest)
+![GitHub Repo stars](https://img.shields.io/github/stars/awad/PyDepManager?style=social)
+![Documentation Status](https://readthedocs.org/projects/pydepmanager/badge/?version=latest)
+
 
 PyDepManager is a powerful and easy-to-use dependency management tool for Python projects. It helps you manage your project's dependencies efficiently, ensuring compatibility and stability across different environments.
 
@@ -49,13 +54,6 @@ We welcome contributions to PyDepManager! If you have any ideas, suggestions, or
 
 PyDepManager is licensed under the MIT License. See the [LICENSE](https://github.com/awad/PyDepManager/blob/main/LICENSE) file for more details.
 
-## Acknowledgements
-
-This project is inspired by the need for a robust and user-friendly dependency management tool in the Python ecosystem.
-![GitHub Repo stars](https://img.shields.io/github/stars/awad/PyDepManager?style=social)
-![Documentation Status](https://readthedocs.org/projects/pydepmanager/badge/?version=latest)
-![GitHub Repo stars](https://img.shields.io/github/stars/awad/PyDepManager?style=social)
-![Documentation Status](https://readthedocs.org/projects/pydepmanager/badge/?version=latest)
 
 
 
