@@ -1,61 +1,83 @@
-# PyDepManager
-
-![Static Badge](https://img.shields.io/badge/bioinformatics-PyHLicorn-green?link=https://academic.oup.com/bioinformatics)
-![GitHub Repo stars](https://img.shields.io/github/stars/AbuAwadM/PyDepManager?style=social)
-![Documentation Status](https://readthedocs.org/projects/pydepmanager/badge/?version=latest)
-![GitHub Repo stars](https://img.shields.io/github/stars/awad/PyDepManager?style=social)
-![Documentation Status](https://readthedocs.org/projects/pydepmanager/badge/?version=latest)
+# PyHLicorn
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/PyDepManger)
+![PyPI - Version](https://img.shields.io/pypi/v/PyDepManger)
+![GitHub repo size](https://img.shields.io/github/repo-size/AbuAwadM/PyDepManger)
 
 
-PyDepManager is a powerful and easy-to-use dependency management tool for Python projects. It helps you manage your project's dependencies efficiently, ensuring compatibility and stability across different environments.
+A Python package that re-implements an existing deprecated R package.
 
-## Features
+- **[Documentation](https://www.google.co.uk/)**
+- **[Source Code](https://www.google.co.uk/)**
+- **[Research Paper](https://www.google.co.uk/)**
+- **[Issues](https://www.google.co.uk/)**
 
-- **Automatic Dependency Resolution**: Automatically resolves and installs the required dependencies for your project.
-- **Environment Management**: Create and manage virtual environments effortlessly.
-- **Compatibility Checks**: Ensures that all dependencies are compatible with each other.
-- **Easy Configuration**: Simple configuration files to specify your project's dependencies.
+The PyHLicorn package aims to infer a large-scale transcription co-regulatory network from transcriptomic data and integrate external data on gene regulation to infer and analyze transcriptional programs. The unique aspect of the network inference algorithm proposed in the package is its ability to learn co-regulation networks where gene regulation is modeled by transcription factors acting cooperatively to synergistically regulate target genes.
+
+## About the Project
+The package was utilized in a study of Bladder Cancer to identify the driver transcriptional programs from a set of 183 samples. Throughout this vignette, a smaller version of the transcriptomic dataset is used to illustrate the package's usage.
 
 ## Installation
 
-You can install PyDepManager using pip:
+To install the package, use pip:
+```sh
+pip install PyHLicorn
+```
 
-```bash
-pip install pydepmanager
+To clone the repository, use GitHub:
+```sh
+git clone https://www.google.co.uk/
 ```
 
 ## Usage
+Refer to the [documentation](https://www.google.co.uk/) for detailed usage instructions.
 
-To get started with PyDepManager, follow these steps:
+Here is an example of how to use the PyHLicorn package in your Python code:
 
-1. Initialize a new project:
+### Import the Library
+```python
+import pandas as pd
+from PyHLicorn import HLicorn
+```
 
-    ```bash
-    pydepmanager init
-    ```
+### Import the Data
+```python
+numerical_expression = pd.read_csv(file_path, index_col=0)
+discrete_expression = pd.read_csv(file_path, index_col=0)
+tf_list = pd.read_csv(file_path)
+```
 
-2. Add dependencies to your project:
+### Create the Gene Regulatory Network
+```python
+GRN = HLicorn(numerical_expression, tf_list, discrete_expression)
+```
+## Authors
 
-    ```bash
-    pydepmanager add <package_name>
-    ```
+- **John Doe** - *Initial work* - [JohnDoe]()
+- **Jane Smith** - *Contributor* - [JaneSmith]()
 
-3. Install all dependencies:
+## Maintainers
 
-    ```bash
-    pydepmanager install
-    ```
+- **Alice Johnson** - [AliceJohnson]()
+- **Bob Brown** - [BobBrown]()
 
-## Contributing
+## Credits
 
-We welcome contributions to PyDepManager! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request on our [GitHub repository](https://github.com/awad/PyDepManager).
+- Special thanks to the [XYZ Lab](https://www.xyzlab.com) for their support and resources.
+- Thanks to all contributors who have helped improve this project.
 
-## License
+## Citation
 
-PyDepManager is licensed under the MIT License. See the [LICENSE](https://github.com/awad/PyDepManager/blob/main/LICENSE) file for more details.
+If you use this package in your research, please cite the following paper:
 
-
-
-
-
-
+```
+@article{Doe2023,
+        title={PyHLicorn: A Python package for transcription co-regulatory network inference},
+        author={Doe, John and Smith, Jane},
+        journal={Journal of Computational Biology},
+        volume={30},
+        number={4},
+        pages={123-134},
+        year={2023},
+        publisher={Bioinformatics Press}
+}
+```
