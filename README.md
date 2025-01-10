@@ -1,4 +1,5 @@
-![PyHLicorn Logo](Picture10.png)
+![Logo](https://raw.githubusercontent.com/AbuAwadM/PyDepManger/v0.0.8/Picture10.png)
+
 # PyHLicorn
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/PyDepManger)
 ![PyPI - Version](https://img.shields.io/pypi/v/PyDepManger)
