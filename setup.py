@@ -45,11 +45,6 @@ setuptools.setup(
         "Programming Language :: C",
         "Topic :: Scientific/Engineering :: Bio-Informatics",
     ],
-    project_urls={
-        "Documentation": "https://github.com/abuawadd/PyDepManger/wiki",
-        "Source": "https://github.com/abuawadd/PyDepManger",
-        "Changelog": "https://github.com/abuawadd/PyDepManger/blob/main/CHANGELOG.md",
-    },
     install_requires=parse_requirements('requirements.txt'),
     packages=setuptools.find_packages(),
     use_scm_version=True,
