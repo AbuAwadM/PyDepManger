@@ -1,6 +1,10 @@
-![Logo](https://raw.githubusercontent.com/AbuAwadM/PyDepManger/v0.0.8/Picture10.png)
+<picture>
+        <source srcset="https://github.com/AbuAwadM/PyDepManger/blob/main/Picture10.png?raw=true" media="(prefers-color-scheme: dark)">
+        <img src="https://github.com/AbuAwadM/PyDepManger/blob/main/Picture1.png?raw=true" alt="Mode Image">
+</picture>
 
-# PyHLicorn
+---
+<!-- # PyHLicorn -->
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/PyDepManger)
 ![PyPI - Version](https://img.shields.io/pypi/v/PyDepManger)
 ![GitHub repo size](https://img.shields.io/github/repo-size/AbuAwadM/PyDepManger)
@@ -45,7 +49,7 @@ from PyHLicorn import HLicorn
 ```python
 numerical_expression = pd.read_csv(file_path, index_col=0)
 discrete_expression = pd.read_csv(file_path, index_col=0)
-tf_list = pd.read_csv(file_path)
+tf_list = pd.read_csv(file_path, index_col=0)
 ```
 
 ### Create the Gene Regulatory Network
@@ -73,13 +77,13 @@ If you use this package in your research, please cite the following paper:
 
 ```
 @article{Doe2023,
-        title={PyHLicorn: A Python package for transcription co-regulatory network inference},
-        author={Doe, John and Smith, Jane},
-        journal={Journal of Computational Biology},
-        volume={30},
-        number={4},
-        pages={123-134},
-        year={2023},
-        publisher={Bioinformatics Press}
+                                title={PyHLicorn: A Python package for transcription co-regulatory network inference},
+                                author={Doe, John and Smith, Jane},
+                                journal={Journal of Computational Biology},
+                                volume={30},
+                                number={4},
+                                pages={123-134},
+                                year={2023},
+                                publisher={Bioinformatics Press}
 }
 ```
