@@ -1,0 +1,7 @@
+// ...existing code...
+
+# Ignore Python cache
+__pycache__/
+
+# Ignore Sphinx Makefile
+docs/build
