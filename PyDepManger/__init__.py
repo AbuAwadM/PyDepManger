@@ -1,2 +1,2 @@
-from .interface import Manger
-__all__ = ['Manger']
+from .core import PyDepManger
+__all__ = ['PyDepManger']

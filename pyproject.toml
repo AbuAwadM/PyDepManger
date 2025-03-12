@@ -1,3 +1,13 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools", "setuptools_scm"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyDepManger"
+dynamic = ["version"] 
+
+# Package Dir
+[tool.setuptools.packages.find]
+where = ["PyDepManger","PyDepManger.*"]
+namespaces = false
+
