@@ -1,3 +1,4 @@
-from cpylibs import hello
+from ..cpylibs import hello
 
-hello()
+def sayHello():
+    return hello()
