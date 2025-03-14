@@ -1,15 +1,17 @@
 [build-system]
-requires = ["setuptools", "setuptools_scm","numpy"]
+requires = ["setuptools", "setuptools_scm", "numpy"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "PyDepManger"
 dynamic = ["version"] 
-
+dependencies = [
+"pandas",
+"numpy"
+]
 
 # Package Dir
 [tool.setuptools.packages.find]
-where = ["PyDepManger","PyDepManger.*"]
+include = ["PyDepManger", "PyDepManger.*"]
 namespaces = false
-
 
