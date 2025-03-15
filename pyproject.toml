@@ -15,10 +15,8 @@ dependencies = [
 include = ["PyDepManger", "PyDepManger.*"]
 namespaces = false
 
-
 [tool.cibuildwheel]
-build = "*"
-skip = ["cp36-*", "cp37-*","cp38-*","cp39-*"]
+skip = "cp36-* cp37-* cp38-* cp39-* pp* *_i686 *_ppc64le *_s390x *_universal2"
 
 ################################################
 # This package is built on top of these pacs so these wont work anyway?
