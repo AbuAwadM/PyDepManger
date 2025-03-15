@@ -6,8 +6,13 @@ build-backend = "setuptools.build_meta"
 name = "PyDepManger"
 dynamic = ["version"] 
 dependencies = [
-"pandas",
-"numpy"
+"numpy==2.2.3",
+"pandas==2.2.3",
+"python-dateutil==2.9.0.post0",
+"pytz==2025.1",
+"setuptools==76.0.0",
+"six==1.17.0",
+"tzdata==2025.1"
 ]
 
 # Package Dir
@@ -15,14 +20,17 @@ dependencies = [
 include = ["PyDepManger", "PyDepManger.*"]
 namespaces = false
 
-[tool.cibuildwheel]
-skip = "cp36-* cp37-* cp38-* cp39-* pp* *_i686 *_ppc64le *_s390x *_universal2"
-
 ################################################
 # This package is built on top of these pacs so these wont work anyway?
 # Pandas : skip = "cp36-* cp37-* cp38-* cp39-* pp* *_i686 *_ppc64le *_s390x"
 # Numpy : skip = "*_i686 *_ppc64le *_s390x *_universal2"
 # sckit is on workflows
 # scipy : skip = "cp36-* cp37-* cp38-* pp* *_ppc64le *_i686 *_s390x"
-# 
+################################################
+
+[tool.cibuildwheel]
+skip = "cp36-* cp37-* cp38-* cp39-* pp* *_i686 *_ppc64le *_s390x *_universal2"
+before-test = "pip install -r {project}/requirements.txt"
+
+
 
